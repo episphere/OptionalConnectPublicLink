@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data &amp; Platforms | Connect for Cancer Prevention Study</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uswds@3.7.1/dist/css/uswds.min.css" />
+  <link rel="stylesheet" href="assets/css/custom.css" />
+</head>
+<body>
+
+  <!-- Gov Banner -->
+  <section class="usa-banner" aria-label="Official website of the United States government">
+    <div class="usa-accordion">
+      <header class="usa-banner__header">
+        <div class="usa-banner__inner">
+          <div class="grid-col-auto">
+            <img class="usa-banner__header-flag" src="https://designsystem.digital.gov/assets/img/us_flag_small.png" alt="U.S. flag" />
+          </div>
+          <div class="grid-col-fill tablet:grid-col-auto">
+            <p class="usa-banner__header-text">An official website of the United States government</p>
+            <p class="usa-banner__header-action" aria-hidden="true">Here's how you know</p>
+          </div>
+          <button type="button" class="usa-accordion__button usa-banner__button" aria-expanded="false" aria-controls="gov-banner-data">
+            <span class="usa-banner__button-text">Here's how you know</span>
+          </button>
+        </div>
+      </header>
+      <div class="usa-banner__content usa-accordion__content" id="gov-banner-data" hidden>
+        <div class="grid-row grid-gap-lg">
+          <div class="usa-banner__guidance tablet:grid-col-6">
+            <img class="usa-banner__icon usa-media-block__img" src="https://designsystem.digital.gov/assets/img/icon-dot-gov.svg" alt="" />
+            <div class="usa-media-block__body"><p><strong>Official websites use .gov</strong></p></div>
+          </div>
+          <div class="usa-banner__guidance tablet:grid-col-6">
+            <img class="usa-banner__icon usa-media-block__img" src="https://designsystem.digital.gov/assets/img/icon-https.svg" alt="" />
+            <div class="usa-media-block__body"><p><strong>Secure .gov websites use HTTPS</strong></p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NCI Header Bar -->
+  <div class="nci-header-bar">
+    <div class="nci-header-bar__inner grid-container">
+      <a href="https://www.cancer.gov" class="nci-header-bar__logo" target="_blank" rel="noopener">
+        <img src="assets/img/nci-logo-full.svg" alt="National Cancer Institute" height="40" />
+      </a>
+      <span class="nci-header-bar__tagline">Part of the <strong>National Institutes of Health</strong></span>
+    </div>
+  </div>
+
+  <!-- Site Header -->
+  <header class="usa-header usa-header--extended connect-header" role="banner">
+    <div class="usa-navbar">
+      <div class="usa-logo grid-container" id="basic-logo">
+        <em class="usa-logo__text">
+          <a href="index.html" title="Connect for Cancer Prevention Study">
+            <span class="connect-logo-text">Connect</span>
+            <span class="connect-logo-sub">for Cancer Prevention Study</span>
+          </a>
+        </em>
+      </div>
+      <button type="button" class="usa-menu-btn">Menu</button>
+    </div>
+    <nav aria-label="Primary navigation" class="usa-nav">
+      <div class="usa-nav__inner">
+        <button type="button" class="usa-nav__close"><img src="https://designsystem.digital.gov/assets/img/usa-icons/close.svg" alt="Close" /></button>
+        <ul class="usa-nav__primary usa-accordion">
+          <li class="usa-nav__primary-item">
+            <a href="index.html" class="usa-nav__link"><span>Home</span></a>
+          </li>
+          <li class="usa-nav__primary-item">
+            <button type="button" class="usa-accordion__button usa-nav__link" aria-expanded="false" aria-controls="nav-about">
+              <span>About the Study</span>
+            </button>
+            <ul id="nav-about" class="usa-nav__submenu" hidden>
+              <li class="usa-nav__submenu-item"><a href="about.html#overview">Overview</a></li>
+              <li class="usa-nav__submenu-item"><a href="about.html#goals">Study Goals</a></li>
+              <li class="usa-nav__submenu-item"><a href="about.html#eligibility">Eligibility</a></li>
+              <li class="usa-nav__submenu-item"><a href="about.html#timeline">Timeline</a></li>
+            </ul>
+          </li>
+          <li class="usa-nav__primary-item">
+            <button type="button" class="usa-accordion__button usa-nav__link usa-current" aria-expanded="false" aria-controls="nav-data">
+              <span>Data &amp; Platforms</span>
+            </button>
+            <ul id="nav-data" class="usa-nav__submenu" hidden>
+              <li class="usa-nav__submenu-item"><a href="#access">Data Access</a></li>
+              <li class="usa-nav__submenu-item"><a href="#platforms">Platforms</a></li>
+              <li class="usa-nav__submenu-item"><a href="#dictionary">Data Dictionary</a></li>
+              <li class="usa-nav__submenu-item"><a href="#bsi">Biospecimen Info</a></li>
+            </ul>
+          </li>
+          <li class="usa-nav__primary-item">
+            <a href="about.html#team" class="usa-nav__link"><span>Team</span></a>
+          </li>
+        </ul>
+        <div class="usa-nav__secondary">
+          <ul class="usa-nav__secondary-links">
+            <li class="usa-nav__secondary-item"><a href="https://github.com/episphere/connect" target="_blank" rel="noopener">GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="connect-page-hero">
+    <div class="grid-container">
+      <nav class="usa-breadcrumb" aria-label="Breadcrumbs">
+        <ol class="usa-breadcrumb__list">
+          <li class="usa-breadcrumb__list-item"><a href="index.html" class="usa-breadcrumb__link">Home</a></li>
+          <li class="usa-breadcrumb__list-item usa-current" aria-current="page">Data &amp; Platforms</li>
+        </ol>
+      </nav>
+      <h1 class="connect-page-hero__title">Data &amp; Platforms</h1>
+    </div>
+  </section>
+
+  <!-- Content -->
+  <div class="grid-container connect-content-layout">
+    <div class="grid-row grid-gap">
+
+      <!-- Sidebar -->
+      <aside class="tablet:grid-col-3 connect-sidebar">
+        <nav aria-label="On this page" class="connect-sidenav">
+          <p class="connect-sidenav__label">On this page</p>
+          <ul class="usa-list usa-list--unstyled">
+            <li><a href="#access" class="connect-sidenav__link">Data Access</a></li>
+            <li><a href="#platforms" class="connect-sidenav__link">Platforms</a></li>
+            <li><a href="#dictionary" class="connect-sidenav__link">Data Dictionary</a></li>
+            <li><a href="#bsi" class="connect-sidenav__link">Biospecimen Info</a></li>
+            <li><a href="#governance" class="connect-sidenav__link">Data Governance</a></li>
+          </ul>
+        </nav>
+        <div class="connect-sidebar-cta">
+          <h4>Request Data Access</h4>
+          <p>Approved researchers can apply for access to de-identified Connect data through the NCI CRDC.</p>
+          <a href="https://datascience.cancer.gov/data-commons" class="usa-button connect-btn--primary" style="width:100%;text-align:center;" target="_blank" rel="noopener">Apply via CRDC</a>
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <main id="main-content" class="tablet:grid-col-9 connect-main-content">
+
+        <section id="access" class="connect-content-section">
+          <h2>Data Access</h2>
+          <p>Connect data are available to qualified researchers through the NCI Cancer Research Data Commons (CRDC). Data access follows a tiered model based on the sensitivity of the data requested.</p>
+
+          <div class="usa-accordion connect-accordion" aria-multiselectable="true">
+            <h3 class="usa-accordion__heading">
+              <button type="button" class="usa-accordion__button" aria-expanded="true" aria-controls="tier1">
+                Tier 1 — Open Access Summary Statistics
+              </button>
+            </h3>
+            <div id="tier1" class="usa-accordion__content usa-prose">
+              <p>Aggregate summary statistics and enrollment demographics are publicly available without registration. These include participant counts by site, demographic distributions, and biospecimen availability summaries.</p>
+              <a href="https://github.com/episphere/connect/wiki" class="usa-button connect-btn--outline" target="_blank" rel="noopener">View Summary Stats</a>
+            </div>
+
+            <h3 class="usa-accordion__heading">
+              <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="tier2">
+                Tier 2 — Registered Researcher Access
+              </button>
+            </h3>
+            <div id="tier2" class="usa-accordion__content usa-prose" hidden>
+              <p>De-identified individual-level data are available to researchers who register through the NCI CRDC and agree to the data use agreement (DUA). Registration requires institutional affiliation and IRB documentation.</p>
+              <ul>
+                <li>Survey data (questionnaire responses)</li>
+                <li>EHR-derived variables (diagnoses, medications, labs)</li>
+                <li>Cancer registry linkage data</li>
+              </ul>
+            </div>
+
+            <h3 class="usa-accordion__heading">
+              <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="tier3">
+                Tier 3 — Controlled Access (Genomic &amp; Multi-omic)
+              </button>
+            </h3>
+            <div id="tier3" class="usa-accordion__content usa-prose" hidden>
+              <p>Genomic and other multi-omic data require a separate data access request (DAR) submitted through dbGaP. Review is conducted by the NCI Data Access Committee (DAC).</p>
+              <ul>
+                <li>Germline whole genome sequencing</li>
+                <li>Methylation arrays</li>
+                <li>Metabolomic and proteomic assay data</li>
+              </ul>
+              <a href="https://dbgap.ncbi.nlm.nih.gov" class="usa-button connect-btn--outline" target="_blank" rel="noopener">Apply via dbGaP</a>
+            </div>
+          </div>
+        </section>
+
+        <section id="platforms" class="connect-content-section">
+          <h2>Platforms</h2>
+          <p>Connect uses a suite of interconnected, open-source platforms developed collaboratively between NCI's Episphere group and health system partners. All platform code is publicly available on GitHub.</p>
+
+          <div class="grid-row grid-gap" style="margin-top:1.5rem;">
+            <div class="tablet:grid-col-6">
+              <div class="connect-platform-card">
+                <div class="connect-platform-card__header connect-platform-card__header--blue">
+                  <h3>Participant Portal</h3>
+                </div>
+                <div class="connect-platform-card__body">
+                  <p>A web-based application where participants complete enrollment, surveys, and manage their study participation. Built with vanilla JavaScript and Firebase.</p>
+                  <ul>
+                    <li>Online enrollment and consent</li>
+                    <li>Survey administration (MyConnect)</li>
+                    <li>Biospecimen appointment scheduling</li>
+                    <li>HIPAA-compliant data handling</li>
+                  </ul>
+                  <a href="https://github.com/episphere/connect" class="connect-link" target="_blank" rel="noopener">View on GitHub →</a>
+                </div>
+              </div>
+            </div>
+            <div class="tablet:grid-col-6">
+              <div class="connect-platform-card">
+                <div class="connect-platform-card__header connect-platform-card__header--teal">
+                  <h3>Site Manager Dashboard</h3>
+                </div>
+                <div class="connect-platform-card__body">
+                  <p>An operational tool for health system site coordinators to manage participant recruitment, track biospecimen collection, and monitor study progress.</p>
+                  <ul>
+                    <li>Recruitment tracking and reporting</li>
+                    <li>Biospecimen workflow management</li>
+                    <li>Participant verification and lookup</li>
+                    <li>Real-time enrollment dashboards</li>
+                  </ul>
+                  <a href="https://github.com/episphere/connectApp" class="connect-link" target="_blank" rel="noopener">View on GitHub →</a>
+                </div>
+              </div>
+            </div>
+            <div class="tablet:grid-col-6">
+              <div class="connect-platform-card">
+                <div class="connect-platform-card__header connect-platform-card__header--red">
+                  <h3>Data Platform (epidataplatforms)</h3>
+                </div>
+                <div class="connect-platform-card__body">
+                  <p>A researcher-facing data discovery and access platform, enabling exploration of available variables, cohort summaries, and data request initiation.</p>
+                  <ul>
+                    <li>Variable browsing and search</li>
+                    <li>Cohort summary statistics</li>
+                    <li>Data availability by collection wave</li>
+                    <li>Integration with CRDC access workflows</li>
+                  </ul>
+                  <a href="https://epidataplatforms.cancer.gov" class="connect-link" target="_blank" rel="noopener">Visit platform →</a>
+                </div>
+              </div>
+            </div>
+            <div class="tablet:grid-col-6">
+              <div class="connect-platform-card">
+                <div class="connect-platform-card__header connect-platform-card__header--gray">
+                  <h3>Biospecimen Inventory System</h3>
+                </div>
+                <div class="connect-platform-card__body">
+                  <p>Tracks the collection, processing, storage, and distribution of blood, urine, saliva, and tumor biospecimens from Connect participants.</p>
+                  <ul>
+                    <li>Tube-level inventory tracking</li>
+                    <li>Cold chain management</li>
+                    <li>Aliquot and shipping workflows</li>
+                    <li>Integration with LIMS systems at sites</li>
+                  </ul>
+                  <a href="https://github.com/episphere/biospecimen" class="connect-link" target="_blank" rel="noopener">View on GitHub →</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="dictionary" class="connect-content-section">
+          <h2>Data Dictionary</h2>
+          <p>The Connect data dictionary documents all variables collected across study instruments, EHR linkage, and biospecimen assays. It is versioned and maintained on GitHub.</p>
+
+          <div class="usa-alert usa-alert--info" style="margin-bottom:1.5rem;">
+            <div class="usa-alert__body">
+              <h4 class="usa-alert__heading">Current version: v3.1</h4>
+              <p class="usa-alert__text">The data dictionary is updated with each major data release. Always reference the version corresponding to your data release when conducting analyses.</p>
+            </div>
+          </div>
+
+          <table class="usa-table usa-table--borderless connect-table" style="width:100%;">
+            <caption>Data domains and variable counts</caption>
+            <thead>
+              <tr>
+                <th scope="col">Domain</th>
+                <th scope="col">Instrument / Source</th>
+                <th scope="col">Variables (approx.)</th>
+                <th scope="col">Collection frequency</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Demographics</td>
+                <td>Enrollment survey</td>
+                <td>25</td>
+                <td>Baseline</td>
+              </tr>
+              <tr>
+                <td>Diet &amp; Nutrition</td>
+                <td>Dietary questionnaire</td>
+                <td>150+</td>
+                <td>Baseline, Year 3</td>
+              </tr>
+              <tr>
+                <td>Physical Activity</td>
+                <td>Survey + wearable</td>
+                <td>40</td>
+                <td>Annual</td>
+              </tr>
+              <tr>
+                <td>Medical History</td>
+                <td>Survey + EHR</td>
+                <td>200+</td>
+                <td>Baseline + continuous EHR</td>
+              </tr>
+              <tr>
+                <td>Medications &amp; Supplements</td>
+                <td>EHR linkage</td>
+                <td>Variable</td>
+                <td>Continuous</td>
+              </tr>
+              <tr>
+                <td>Biospecimen Assays</td>
+                <td>Lab / omics platforms</td>
+                <td>Growing</td>
+                <td>Baseline, incident cases</td>
+              </tr>
+              <tr>
+                <td>Cancer Outcomes</td>
+                <td>Cancer registry + EHR</td>
+                <td>50+</td>
+                <td>Annual linkage</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p style="margin-top:1rem;">
+            <a href="https://github.com/episphere/connect/wiki" class="usa-button connect-btn--outline" target="_blank" rel="noopener">View Full Data Dictionary on GitHub</a>
+          </p>
+        </section>
+
+        <section id="bsi" class="connect-content-section">
+          <h2>Biospecimen Information</h2>
+          <p>Connect collects biological samples at clinical sites affiliated with each health system partner. Samples are processed locally and shipped to a central NCI biorepository for long-term storage.</p>
+
+          <div class="grid-row grid-gap" style="margin-top:1rem;">
+            <div class="tablet:grid-col-4">
+              <div class="connect-bsi-card">
+                <div class="connect-bsi-card__type">Blood</div>
+                <ul>
+                  <li>EDTA plasma</li>
+                  <li>Serum</li>
+                  <li>Buffy coat (DNA)</li>
+                  <li>PAXgene RNA</li>
+                  <li>Whole blood (methylation)</li>
+                </ul>
+              </div>
+            </div>
+            <div class="tablet:grid-col-4">
+              <div class="connect-bsi-card">
+                <div class="connect-bsi-card__type">Urine</div>
+                <ul>
+                  <li>First morning void</li>
+                  <li>Metabolomics aliquots</li>
+                  <li>Microbiome pellet</li>
+                </ul>
+              </div>
+            </div>
+            <div class="tablet:grid-col-4">
+              <div class="connect-bsi-card">
+                <div class="connect-bsi-card__type">Other</div>
+                <ul>
+                  <li>Saliva (microbiome)</li>
+                  <li>Mouthwash rinse</li>
+                  <li>Tumor tissue (incident cases)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <p style="margin-top:1.5rem;">Researchers interested in requesting biospecimens for ancillary studies should contact the Connect Biospecimen Working Group through the NCI CRDC data request portal.</p>
+        </section>
+
+        <section id="governance" class="connect-content-section">
+          <h2>Data Governance</h2>
+          <p>Connect's data governance framework ensures participant privacy, regulatory compliance, and equitable data access.</p>
+          <ul class="usa-list">
+            <li><strong>IRB oversight:</strong> The study protocol is overseen by the NCI Special Studies IRB. Each health system also maintains local IRB approval.</li>
+            <li><strong>Informed consent:</strong> All participants provide electronic informed consent prior to enrollment. Consent is tiered and covers survey data, EHR linkage, biospecimen collection, and future contact.</li>
+            <li><strong>Data use agreements:</strong> Researchers accessing individual-level data must sign a DUA restricting re-identification, data sharing, and commercial use.</li>
+            <li><strong>Security:</strong> Data are stored in FISMA-compliant, FedRAMP-authorized cloud infrastructure. Access is role-based and audited.</li>
+            <li><strong>Equity in access:</strong> Connect prioritizes enabling researchers from underrepresented institutions through streamlined access pathways and technical support.</li>
+          </ul>
+        </section>
+
+      </main>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="usa-footer connect-footer">
+    <div class="usa-footer__primary-section">
+      <div class="grid-container">
+        <div class="grid-row grid-gap">
+          <div class="tablet:grid-col-4">
+            <h4 class="connect-footer__heading">Connect Study</h4>
+            <p>A National Cancer Institute initiative to build a diverse research resource for cancer prevention science.</p>
+          </div>
+          <div class="tablet:grid-col-4">
+            <h4 class="connect-footer__heading">Quick Links</h4>
+            <ul class="usa-list usa-list--unstyled">
+              <li><a href="index.html" class="connect-footer__link">Home</a></li>
+              <li><a href="about.html" class="connect-footer__link">About the Study</a></li>
+              <li><a href="data-platforms.html" class="connect-footer__link">Data &amp; Platforms</a></li>
+            </ul>
+          </div>
+          <div class="tablet:grid-col-4">
+            <h4 class="connect-footer__heading">Resources</h4>
+            <ul class="usa-list usa-list--unstyled">
+              <li><a href="https://github.com/episphere/connect" class="connect-footer__link" target="_blank" rel="noopener">GitHub Repository</a></li>
+              <li><a href="https://www.cancer.gov" class="connect-footer__link" target="_blank" rel="noopener">NCI Website</a></li>
+              <li><a href="https://www.nih.gov" class="connect-footer__link" target="_blank" rel="noopener">NIH Website</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="usa-footer__secondary-section connect-footer__secondary">
+      <div class="grid-container">
+        <p class="connect-footer__legal">This study is funded by the National Cancer Institute, National Institutes of Health, U.S. Department of Health and Human Services.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/uswds@3.7.1/dist/js/uswds.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

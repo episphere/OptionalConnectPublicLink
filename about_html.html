@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About the Study | Connect for Cancer Prevention Study</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uswds@3.7.1/dist/css/uswds.min.css" />
+  <link rel="stylesheet" href="assets/css/custom.css" />
+</head>
+<body>
+
+  <!-- Gov Banner (same as index) -->
+  <section class="usa-banner" aria-label="Official website of the United States government">
+    <div class="usa-accordion">
+      <header class="usa-banner__header">
+        <div class="usa-banner__inner">
+          <div class="grid-col-auto">
+            <img class="usa-banner__header-flag" src="https://designsystem.digital.gov/assets/img/us_flag_small.png" alt="U.S. flag" />
+          </div>
+          <div class="grid-col-fill tablet:grid-col-auto">
+            <p class="usa-banner__header-text">An official website of the United States government</p>
+            <p class="usa-banner__header-action" aria-hidden="true">Here's how you know</p>
+          </div>
+          <button type="button" class="usa-accordion__button usa-banner__button" aria-expanded="false" aria-controls="gov-banner-about">
+            <span class="usa-banner__button-text">Here's how you know</span>
+          </button>
+        </div>
+      </header>
+      <div class="usa-banner__content usa-accordion__content" id="gov-banner-about" hidden>
+        <div class="grid-row grid-gap-lg">
+          <div class="usa-banner__guidance tablet:grid-col-6">
+            <img class="usa-banner__icon usa-media-block__img" src="https://designsystem.digital.gov/assets/img/icon-dot-gov.svg" alt="" />
+            <div class="usa-media-block__body"><p><strong>Official websites use .gov</strong></p></div>
+          </div>
+          <div class="usa-banner__guidance tablet:grid-col-6">
+            <img class="usa-banner__icon usa-media-block__img" src="https://designsystem.digital.gov/assets/img/icon-https.svg" alt="" />
+            <div class="usa-media-block__body"><p><strong>Secure .gov websites use HTTPS</strong></p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NCI Header Bar -->
+  <div class="nci-header-bar">
+    <div class="nci-header-bar__inner grid-container">
+      <a href="https://www.cancer.gov" class="nci-header-bar__logo" target="_blank" rel="noopener">
+        <img src="assets/img/nci-logo-full.svg" alt="National Cancer Institute" height="40" />
+      </a>
+      <span class="nci-header-bar__tagline">Part of the <strong>National Institutes of Health</strong></span>
+    </div>
+  </div>
+
+  <!-- Site Header -->
+  <header class="usa-header usa-header--extended connect-header" role="banner">
+    <div class="usa-navbar">
+      <div class="usa-logo grid-container" id="basic-logo">
+        <em class="usa-logo__text">
+          <a href="index.html" title="Connect for Cancer Prevention Study">
+            <span class="connect-logo-text">Connect</span>
+            <span class="connect-logo-sub">for Cancer Prevention Study</span>
+          </a>
+        </em>
+      </div>
+      <button type="button" class="usa-menu-btn">Menu</button>
+    </div>
+    <nav aria-label="Primary navigation" class="usa-nav">
+      <div class="usa-nav__inner">
+        <button type="button" class="usa-nav__close"><img src="https://designsystem.digital.gov/assets/img/usa-icons/close.svg" alt="Close" /></button>
+        <ul class="usa-nav__primary usa-accordion">
+          <li class="usa-nav__primary-item">
+            <a href="index.html" class="usa-nav__link"><span>Home</span></a>
+          </li>
+          <li class="usa-nav__primary-item">
+            <button type="button" class="usa-accordion__button usa-nav__link usa-current" aria-expanded="false" aria-controls="nav-about">
+              <span>About the Study</span>
+            </button>
+            <ul id="nav-about" class="usa-nav__submenu" hidden>
+              <li class="usa-nav__submenu-item"><a href="#overview">Overview</a></li>
+              <li class="usa-nav__submenu-item"><a href="#goals">Study Goals</a></li>
+              <li class="usa-nav__submenu-item"><a href="#eligibility">Eligibility</a></li>
+              <li class="usa-nav__submenu-item"><a href="#timeline">Timeline</a></li>
+            </ul>
+          </li>
+          <li class="usa-nav__primary-item">
+            <button type="button" class="usa-accordion__button usa-nav__link" aria-expanded="false" aria-controls="nav-data">
+              <span>Data &amp; Platforms</span>
+            </button>
+            <ul id="nav-data" class="usa-nav__submenu" hidden>
+              <li class="usa-nav__submenu-item"><a href="data-platforms.html#access">Data Access</a></li>
+              <li class="usa-nav__submenu-item"><a href="data-platforms.html#platforms">Platforms</a></li>
+              <li class="usa-nav__submenu-item"><a href="data-platforms.html#dictionary">Data Dictionary</a></li>
+              <li class="usa-nav__submenu-item"><a href="data-platforms.html#bsi">Biospecimen Info</a></li>
+            </ul>
+          </li>
+          <li class="usa-nav__primary-item">
+            <a href="#team" class="usa-nav__link"><span>Team</span></a>
+          </li>
+        </ul>
+        <div class="usa-nav__secondary">
+          <ul class="usa-nav__secondary-links">
+            <li class="usa-nav__secondary-item"><a href="https://github.com/episphere/connect" target="_blank" rel="noopener">GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="connect-page-hero">
+    <div class="grid-container">
+      <nav class="usa-breadcrumb" aria-label="Breadcrumbs">
+        <ol class="usa-breadcrumb__list">
+          <li class="usa-breadcrumb__list-item"><a href="index.html" class="usa-breadcrumb__link">Home</a></li>
+          <li class="usa-breadcrumb__list-item usa-current" aria-current="page">About the Study</li>
+        </ol>
+      </nav>
+      <h1 class="connect-page-hero__title">About the Study</h1>
+    </div>
+  </section>
+
+  <!-- In-page Nav + Content -->
+  <div class="grid-container connect-content-layout">
+    <div class="grid-row grid-gap">
+
+      <!-- Sidebar Nav -->
+      <aside class="tablet:grid-col-3 connect-sidebar">
+        <nav aria-label="On this page" class="connect-sidenav">
+          <p class="connect-sidenav__label">On this page</p>
+          <ul class="usa-list usa-list--unstyled">
+            <li><a href="#overview" class="connect-sidenav__link">Overview</a></li>
+            <li><a href="#goals" class="connect-sidenav__link">Study Goals</a></li>
+            <li><a href="#design" class="connect-sidenav__link">Study Design</a></li>
+            <li><a href="#eligibility" class="connect-sidenav__link">Eligibility</a></li>
+            <li><a href="#timeline" class="connect-sidenav__link">Timeline</a></li>
+            <li><a href="#team" class="connect-sidenav__link">Team &amp; Leadership</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- Main Content -->
+      <main id="main-content" class="tablet:grid-col-9 connect-main-content">
+
+        <section id="overview" class="connect-content-section">
+          <h2>Overview</h2>
+          <p>The Connect for Cancer Prevention Study is a large-scale, long-term prospective cohort study designed to create a foundational research resource for studying cancer development in the United States. Funded by the National Cancer Institute (NCI), Connect recruits adults aged 35–70 who are members of integrated health systems across the country.</p>
+          <p>By enrolling participants before they develop cancer and following them over decades, Connect enables researchers to examine the full spectrum of cancer risk factors — including genetics, lifestyle, environment, and healthcare access — in a real-world setting. The study's scale and diversity make it uniquely powerful for studying cancers that disproportionately affect underrepresented communities.</p>
+          <div class="usa-alert usa-alert--info usa-alert--slim" style="margin:1.5rem 0;">
+            <div class="usa-alert__body">
+              <p class="usa-alert__text">Connect is not a clinical trial. Participants do not receive experimental treatments. The study collects data and biospecimens over time to build a research resource available to the scientific community.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="goals" class="connect-content-section">
+          <h2>Study Goals</h2>
+          <p>Connect aims to answer fundamental questions that have remained difficult to study at scale:</p>
+          <ul class="usa-list">
+            <li>What biological, behavioral, and environmental factors increase or decrease the risk of developing cancer?</li>
+            <li>Can blood-based and other biomarkers detect cancer years before clinical diagnosis?</li>
+            <li>How do social determinants of health — including income, education, and neighborhood — affect cancer risk and outcomes?</li>
+            <li>Why do certain cancers disproportionately affect specific racial and ethnic groups?</li>
+            <li>What roles do the microbiome, metabolomics, and epigenetics play in cancer development?</li>
+          </ul>
+          <p>These questions are addressed through the integration of survey data, biospecimens, electronic health records (EHR), and passive data collection including wearable devices.</p>
+        </section>
+
+        <section id="design" class="connect-content-section">
+          <h2>Study Design</h2>
+          <div class="grid-row grid-gap">
+            <div class="tablet:grid-col-6">
+              <div class="connect-design-card">
+                <h3>Recruitment</h3>
+                <p>Participants are recruited through eight integrated health systems via electronic outreach (email, patient portal) and in-person contact at clinical sites. Enrollment targets 200,000 participants with intentional diversity across race, ethnicity, geography, and socioeconomic status.</p>
+              </div>
+            </div>
+            <div class="tablet:grid-col-6">
+              <div class="connect-design-card">
+                <h3>Data Collection</h3>
+                <p>At enrollment and periodically thereafter, participants complete online surveys covering diet, physical activity, exposures, medical history, and more. Blood, urine, and saliva samples are collected at clinical sites and stored in a central biorepository.</p>
+              </div>
+            </div>
+            <div class="tablet:grid-col-6">
+              <div class="connect-design-card">
+                <h3>EHR Linkage</h3>
+                <p>With participant consent, Connect links survey and biospecimen data to electronic health records, enabling longitudinal tracking of diagnoses, medications, labs, and outcomes without requiring additional participant burden.</p>
+              </div>
+            </div>
+            <div class="tablet:grid-col-6">
+              <div class="connect-design-card">
+                <h3>Follow-up</h3>
+                <p>Participants are followed for 10+ years through annual surveys, EHR data, and cancer registry linkage. Incident cancer cases trigger additional data collection and biospecimen requests to support case-control analyses.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="eligibility" class="connect-content-section">
+          <h2>Eligibility</h2>
+          <p>To be eligible for Connect, individuals must:</p>
+          <ul class="usa-list">
+            <li>Be between the ages of 35 and 70 at enrollment</li>
+            <li>Be a member of one of the eight participating health systems for at least 12 months</li>
+            <li>Have no prior cancer diagnosis (excluding non-melanoma skin cancer)</li>
+            <li>Be willing to provide blood, urine, and saliva samples</li>
+            <li>Have access to a device with internet connectivity to complete surveys</li>
+          </ul>
+          <p>Eligibility is determined at the health system level. Researchers interested in the cohort's demographic composition can review summary statistics in the <a href="data-platforms.html">Data &amp; Platforms</a> section.</p>
+        </section>
+
+        <section id="timeline" class="connect-content-section">
+          <h2>Timeline</h2>
+          <div class="connect-timeline">
+            <div class="connect-timeline__item">
+              <div class="connect-timeline__marker"></div>
+              <div class="connect-timeline__content">
+                <strong>2017–2019</strong>
+                <p>Pilot phase at three health systems. Protocol refinement and feasibility assessment.</p>
+              </div>
+            </div>
+            <div class="connect-timeline__item">
+              <div class="connect-timeline__marker"></div>
+              <div class="connect-timeline__content">
+                <strong>2020</strong>
+                <p>Full study launch across all eight health system partners. Enrollment opens.</p>
+              </div>
+            </div>
+            <div class="connect-timeline__item">
+              <div class="connect-timeline__marker"></div>
+              <div class="connect-timeline__content">
+                <strong>2021–2023</strong>
+                <p>Rapid enrollment growth. Biospecimen collection and initial data releases to research community.</p>
+              </div>
+            </div>
+            <div class="connect-timeline__item">
+              <div class="connect-timeline__marker"></div>
+              <div class="connect-timeline__content">
+                <strong>2024–2025</strong>
+                <p>Enrollment target of 200,000 participants reached. Annual follow-up surveys and EHR updates ongoing.</p>
+              </div>
+            </div>
+            <div class="connect-timeline__item">
+              <div class="connect-timeline__marker connect-timeline__marker--future"></div>
+              <div class="connect-timeline__content">
+                <strong>2026 and beyond</strong>
+                <p>Long-term follow-up phase. Expanding research use cases including multi-omic analyses and cancer registry linkage.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="team" class="connect-content-section">
+          <h2>Team &amp; Leadership</h2>
+          <p>Connect is led by NCI's Division of Cancer Epidemiology and Genetics (DCEG) and implemented through a coordinating center and a consortium of health system partners.</p>
+          <div class="grid-row grid-gap" style="margin-top:1.5rem;">
+            <div class="tablet:grid-col-6">
+              <div class="connect-team-card">
+                <div class="connect-team-card__initials">NCI</div>
+                <div>
+                  <strong>NCI Program Leadership</strong>
+                  <p>Division of Cancer Epidemiology and Genetics (DCEG)</p>
+                  <a href="https://dceg.cancer.gov" target="_blank" rel="noopener" class="connect-link">dceg.cancer.gov</a>
+                </div>
+              </div>
+            </div>
+            <div class="tablet:grid-col-6">
+              <div class="connect-team-card">
+                <div class="connect-team-card__initials">CC</div>
+                <div>
+                  <strong>Coordinating Center</strong>
+                  <p>Information Management Services, Inc. (IMS)</p>
+                  <a href="https://www.imsweb.com" target="_blank" rel="noopener" class="connect-link">imsweb.com</a>
+                </div>
+              </div>
+            </div>
+            <div class="tablet:grid-col-6">
+              <div class="connect-team-card">
+                <div class="connect-team-card__initials">EP</div>
+                <div>
+                  <strong>Episphere / NCI DCEG</strong>
+                  <p>Open-source data platform development and maintenance</p>
+                  <a href="https://github.com/episphere" target="_blank" rel="noopener" class="connect-link">github.com/episphere</a>
+                </div>
+              </div>
+            </div>
+            <div class="tablet:grid-col-6">
+              <div class="connect-team-card">
+                <div class="connect-team-card__initials">HS</div>
+                <div>
+                  <strong>Health System Partners</strong>
+                  <p>Eight integrated health systems across the United States</p>
+                  <a href="#overview" class="connect-link">See partner list</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </main>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="usa-footer connect-footer">
+    <div class="usa-footer__primary-section">
+      <div class="grid-container">
+        <div class="grid-row grid-gap">
+          <div class="tablet:grid-col-4">
+            <h4 class="connect-footer__heading">Connect Study</h4>
+            <p>A National Cancer Institute initiative to build a diverse research resource for cancer prevention science.</p>
+          </div>
+          <div class="tablet:grid-col-4">
+            <h4 class="connect-footer__heading">Quick Links</h4>
+            <ul class="usa-list usa-list--unstyled">
+              <li><a href="index.html" class="connect-footer__link">Home</a></li>
+              <li><a href="about.html" class="connect-footer__link">About the Study</a></li>
+              <li><a href="data-platforms.html" class="connect-footer__link">Data &amp; Platforms</a></li>
+            </ul>
+          </div>
+          <div class="tablet:grid-col-4">
+            <h4 class="connect-footer__heading">Resources</h4>
+            <ul class="usa-list usa-list--unstyled">
+              <li><a href="https://github.com/episphere/connect" class="connect-footer__link" target="_blank" rel="noopener">GitHub Repository</a></li>
+              <li><a href="https://www.cancer.gov" class="connect-footer__link" target="_blank" rel="noopener">NCI Website</a></li>
+              <li><a href="https://www.nih.gov" class="connect-footer__link" target="_blank" rel="noopener">NIH Website</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="usa-footer__secondary-section connect-footer__secondary">
+      <div class="grid-container">
+        <p class="connect-footer__legal">This study is funded by the National Cancer Institute, National Institutes of Health, U.S. Department of Health and Human Services.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/uswds@3.7.1/dist/js/uswds.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

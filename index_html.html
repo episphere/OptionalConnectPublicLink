@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Connect for Cancer Prevention Study</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uswds@3.7.1/dist/css/uswds.min.css" />
+  <link rel="stylesheet" href="assets/css/custom.css" />
+</head>
+<body>
+
+  <!-- Gov Banner -->
+  <section class="usa-banner" aria-label="Official website of the United States government">
+    <div class="usa-accordion">
+      <header class="usa-banner__header">
+        <div class="usa-banner__inner">
+          <div class="grid-col-auto">
+            <img class="usa-banner__header-flag" src="https://designsystem.digital.gov/assets/img/us_flag_small.png" alt="U.S. flag" />
+          </div>
+          <div class="grid-col-fill tablet:grid-col-auto">
+            <p class="usa-banner__header-text">An official website of the United States government</p>
+            <p class="usa-banner__header-action" aria-hidden="true">Here's how you know</p>
+          </div>
+          <button type="button" class="usa-accordion__button usa-banner__button" aria-expanded="false" aria-controls="gov-banner">
+            <span class="usa-banner__button-text">Here's how you know</span>
+          </button>
+        </div>
+      </header>
+      <div class="usa-banner__content usa-accordion__content" id="gov-banner" hidden>
+        <div class="grid-row grid-gap-lg">
+          <div class="usa-banner__guidance tablet:grid-col-6">
+            <img class="usa-banner__icon usa-media-block__img" src="https://designsystem.digital.gov/assets/img/icon-dot-gov.svg" alt="" />
+            <div class="usa-media-block__body">
+              <p><strong>Official websites use .gov</strong><br/>A <strong>.gov</strong> website belongs to an official government organization in the United States.</p>
+            </div>
+          </div>
+          <div class="usa-banner__guidance tablet:grid-col-6">
+            <img class="usa-banner__icon usa-media-block__img" src="https://designsystem.digital.gov/assets/img/icon-https.svg" alt="" />
+            <div class="usa-media-block__body">
+              <p><strong>Secure .gov websites use HTTPS</strong><br/>A lock or <strong>https://</strong> means you've safely connected to the .gov website.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NCI Header Bar -->
+  <div class="nci-header-bar">
+    <div class="nci-header-bar__inner grid-container">
+      <a href="https://www.cancer.gov" class="nci-header-bar__logo" target="_blank" rel="noopener">
+        <img src="assets/img/nci-logo-full.svg" alt="National Cancer Institute" height="40" />
+      </a>
+      <span class="nci-header-bar__tagline">Part of the <strong>National Institutes of Health</strong></span>
+    </div>
+  </div>
+
+  <!-- Site Header -->
+  <header class="usa-header usa-header--extended connect-header" role="banner">
+    <div class="usa-navbar">
+      <div class="usa-logo grid-container" id="basic-logo">
+        <em class="usa-logo__text">
+          <a href="index.html" title="Connect for Cancer Prevention Study">
+            <span class="connect-logo-text">Connect</span>
+            <span class="connect-logo-sub">for Cancer Prevention Study</span>
+          </a>
+        </em>
+      </div>
+      <button type="button" class="usa-menu-btn">Menu</button>
+    </div>
+    <nav aria-label="Primary navigation" class="usa-nav">
+      <div class="usa-nav__inner">
+        <button type="button" class="usa-nav__close"><img src="https://designsystem.digital.gov/assets/img/usa-icons/close.svg" alt="Close" /></button>
+        <ul class="usa-nav__primary usa-accordion">
+          <li class="usa-nav__primary-item">
+            <a href="index.html" class="usa-nav__link usa-current"><span>Home</span></a>
+          </li>
+          <li class="usa-nav__primary-item">
+            <button type="button" class="usa-accordion__button usa-nav__link" aria-expanded="false" aria-controls="nav-about">
+              <span>About the Study</span>
+            </button>
+            <ul id="nav-about" class="usa-nav__submenu" hidden>
+              <li class="usa-nav__submenu-item"><a href="about.html#overview">Overview</a></li>
+              <li class="usa-nav__submenu-item"><a href="about.html#goals">Study Goals</a></li>
+              <li class="usa-nav__submenu-item"><a href="about.html#eligibility">Eligibility</a></li>
+              <li class="usa-nav__submenu-item"><a href="about.html#timeline">Timeline</a></li>
+            </ul>
+          </li>
+          <li class="usa-nav__primary-item">
+            <button type="button" class="usa-accordion__button usa-nav__link" aria-expanded="false" aria-controls="nav-data">
+              <span>Data &amp; Platforms</span>
+            </button>
+            <ul id="nav-data" class="usa-nav__submenu" hidden>
+              <li class="usa-nav__submenu-item"><a href="data-platforms.html#access">Data Access</a></li>
+              <li class="usa-nav__submenu-item"><a href="data-platforms.html#platforms">Platforms</a></li>
+              <li class="usa-nav__submenu-item"><a href="data-platforms.html#dictionary">Data Dictionary</a></li>
+              <li class="usa-nav__submenu-item"><a href="data-platforms.html#bsi">Biospecimen Info</a></li>
+            </ul>
+          </li>
+          <li class="usa-nav__primary-item">
+            <a href="about.html#team" class="usa-nav__link"><span>Team</span></a>
+          </li>
+        </ul>
+        <div class="usa-nav__secondary">
+          <ul class="usa-nav__secondary-links">
+            <li class="usa-nav__secondary-item">
+              <a href="https://github.com/episphere/connect" target="_blank" rel="noopener">GitHub</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="connect-hero">
+    <div class="grid-container">
+      <div class="grid-row grid-gap align-items-center">
+        <div class="tablet:grid-col-7">
+          <h1 class="connect-hero__title">Connect for Cancer Prevention Study</h1>
+          <p class="connect-hero__subtitle">A large-scale, long-term prospective cohort study designed to answer fundamental questions about cancer risk, early detection, and prevention across diverse populations.</p>
+          <div class="connect-hero__actions">
+            <a href="about.html" class="usa-button connect-btn--primary">About the Study</a>
+            <a href="data-platforms.html" class="usa-button connect-btn--outline">Data &amp; Platforms</a>
+          </div>
+        </div>
+        <div class="tablet:grid-col-5 connect-hero__stat-block">
+          <div class="connect-stat-grid">
+            <div class="connect-stat">
+              <span class="connect-stat__number">200,000+</span>
+              <span class="connect-stat__label">Participants Enrolled</span>
+            </div>
+            <div class="connect-stat">
+              <span class="connect-stat__number">8</span>
+              <span class="connect-stat__label">Health System Partners</span>
+            </div>
+            <div class="connect-stat">
+              <span class="connect-stat__number">100+</span>
+              <span class="connect-stat__label">Variables Collected</span>
+            </div>
+            <div class="connect-stat">
+              <span class="connect-stat__number">10+</span>
+              <span class="connect-stat__label">Years of Follow-up</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main id="main-content">
+
+    <!-- Intro Section -->
+    <section class="connect-section connect-section--white">
+      <div class="grid-container">
+        <div class="grid-row grid-gap">
+          <div class="tablet:grid-col-8 tablet:grid-offset-2 text-center">
+            <h2 class="connect-section__title">What is Connect?</h2>
+            <p class="connect-section__lead">Connect is a National Cancer Institute (NCI) initiative to build a large research resource to study cancer development. Participants from diverse backgrounds are recruited through integrated healthcare systems across the United States, making Connect one of the most comprehensive cancer prevention cohort studies ever undertaken.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feature Cards -->
+    <section class="connect-section connect-section--gray">
+      <div class="grid-container">
+        <h2 class="connect-section__title text-center">Study Highlights</h2>
+        <div class="grid-row grid-gap">
+          <div class="tablet:grid-col-4">
+            <div class="connect-card">
+              <div class="connect-card__icon connect-card__icon--blue">
+                <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" width="32" height="32"><path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+              </div>
+              <h3 class="connect-card__title">Prospective Design</h3>
+              <p class="connect-card__body">Participants are enrolled before cancer diagnosis and followed over time, enabling causal inference and early detection research that retrospective studies cannot provide.</p>
+            </div>
+          </div>
+          <div class="tablet:grid-col-4">
+            <div class="connect-card">
+              <div class="connect-card__icon connect-card__icon--teal">
+                <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" width="32" height="32"><path fill="currentColor" d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+              </div>
+              <h3 class="connect-card__title">Diverse Enrollment</h3>
+              <p class="connect-card__body">Intentional recruitment across race, ethnicity, age, and geography ensures the study reflects and benefits the full U.S. population, including historically underrepresented groups.</p>
+            </div>
+          </div>
+          <div class="tablet:grid-col-4">
+            <div class="connect-card">
+              <div class="connect-card__icon connect-card__icon--red">
+                <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" width="32" height="32"><path fill="currentColor" d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/></svg>
+              </div>
+              <h3 class="connect-card__title">Rich Data Resource</h3>
+              <p class="connect-card__body">Biospecimens, questionnaire data, EHR linkage, and wearable device data are integrated into a secure, cloud-based platform accessible to the research community.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Data Platform CTA -->
+    <section class="connect-section connect-section--blue-dark">
+      <div class="grid-container">
+        <div class="grid-row grid-gap align-items-center">
+          <div class="tablet:grid-col-8">
+            <h2 class="connect-section__title connect-section__title--light">Access Connect Data</h2>
+            <p class="connect-section__lead connect-section__lead--light">Approved researchers can access de-identified Connect data through the NCI Cancer Research Data Commons. Explore the data dictionary, request access, and begin your analysis.</p>
+          </div>
+          <div class="tablet:grid-col-4 text-right">
+            <a href="data-platforms.html" class="usa-button connect-btn--white">Explore Data &amp; Platforms</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Study Sites -->
+    <section class="connect-section connect-section--white">
+      <div class="grid-container">
+        <h2 class="connect-section__title text-center">Health System Partners</h2>
+        <p class="text-center connect-section__lead" style="max-width:680px;margin:0 auto 2rem;">Connect recruits participants through eight large integrated health systems across the United States.</p>
+        <div class="connect-sites-grid">
+          <div class="connect-site">Kaiser Permanente<br/><span>Colorado</span></div>
+          <div class="connect-site">Kaiser Permanente<br/><span>Northwest</span></div>
+          <div class="connect-site">Kaiser Permanente<br/><span>Georgia</span></div>
+          <div class="connect-site">Henry Ford<br/><span>Health System</span></div>
+          <div class="connect-site">Marshfield Clinic<br/><span>Health System</span></div>
+          <div class="connect-site">Sanford Health</div>
+          <div class="connect-site">HealthPartners</div>
+          <div class="connect-site">University of Chicago<br/><span>Medicine</span></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="usa-footer connect-footer">
+    <div class="usa-footer__primary-section">
+      <div class="grid-container">
+        <div class="grid-row grid-gap">
+          <div class="tablet:grid-col-4">
+            <h4 class="connect-footer__heading">Connect Study</h4>
+            <p>A National Cancer Institute initiative to build a diverse research resource for cancer prevention science.</p>
+          </div>
+          <div class="tablet:grid-col-4">
+            <h4 class="connect-footer__heading">Quick Links</h4>
+            <ul class="usa-list usa-list--unstyled">
+              <li><a href="index.html" class="connect-footer__link">Home</a></li>
+              <li><a href="about.html" class="connect-footer__link">About the Study</a></li>
+              <li><a href="data-platforms.html" class="connect-footer__link">Data &amp; Platforms</a></li>
+            </ul>
+          </div>
+          <div class="tablet:grid-col-4">
+            <h4 class="connect-footer__heading">Resources</h4>
+            <ul class="usa-list usa-list--unstyled">
+              <li><a href="https://github.com/episphere/connect" class="connect-footer__link" target="_blank" rel="noopener">GitHub Repository</a></li>
+              <li><a href="https://www.cancer.gov" class="connect-footer__link" target="_blank" rel="noopener">NCI Website</a></li>
+              <li><a href="https://www.nih.gov" class="connect-footer__link" target="_blank" rel="noopener">NIH Website</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="usa-footer__secondary-section connect-footer__secondary">
+      <div class="grid-container">
+        <div class="grid-row align-items-center">
+          <div class="tablet:grid-col-8">
+            <p class="connect-footer__legal">This study is funded by the National Cancer Institute, National Institutes of Health, U.S. Department of Health and Human Services. This page is maintained for informational purposes.</p>
+          </div>
+          <div class="tablet:grid-col-4 text-right">
+            <a href="https://www.hhs.gov" class="connect-footer__link" target="_blank" rel="noopener">HHS</a> &nbsp;|&nbsp;
+            <a href="https://www.nih.gov" class="connect-footer__link" target="_blank" rel="noopener">NIH</a> &nbsp;|&nbsp;
+            <a href="https://www.cancer.gov" class="connect-footer__link" target="_blank" rel="noopener">NCI</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/uswds@3.7.1/dist/js/uswds.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
