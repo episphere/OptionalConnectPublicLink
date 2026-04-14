@@ -53,14 +53,35 @@ body {
   font-size: 0.8rem;
 }
 
-/* ---- Site Header / Nav ---- */
+/* ---- Site Header / Nav ----
+   Built on the USWDS extended-header pattern
+   (.usa-header--extended). The navbar (logo row)
+   is navy to flow visually with the NCI bar above;
+   the slide-out mobile menu is scoped separately
+   so submenu accordions stay accessible. */
+
 .connect-header {
   border-bottom: 4px solid var(--connect-teal);
+  background-color: var(--connect-navy);
 }
+
+/* Navbar row = logo + mobile menu button.
+   Constrained to the USWDS container width.
+   We no longer rely on putting .grid-container
+   on .usa-logo — that conflicts with .usa-navbar's
+   flex layout. */
 .connect-header .usa-navbar {
   background-color: var(--connect-navy);
+  max-width: 64rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
   min-height: 4rem;
+  box-sizing: border-box;
+  border-bottom: 0;
 }
+.connect-header .usa-logo { margin: 0; }
 .connect-header .usa-logo a {
   text-decoration: none;
   display: flex;
@@ -78,28 +99,108 @@ body {
   font-size: 0.8rem;
   font-weight: 400;
 }
-.connect-header .usa-nav {
-  background-color: var(--connect-navy);
-}
-.connect-header .usa-nav__primary > .usa-nav__primary-item > a,
-.connect-header .usa-nav__primary > .usa-nav__primary-item > button {
-  color: var(--connect-white);
-}
-.connect-header .usa-nav__primary > .usa-nav__primary-item > a:hover,
-.connect-header .usa-nav__primary > .usa-nav__primary-item > button:hover {
-  color: var(--connect-white);
-  background-color: rgba(255,255,255,0.12);
-}
-.connect-header .usa-nav__primary > .usa-nav__primary-item > .usa-current {
-  color: var(--connect-white);
-  border-bottom: 4px solid var(--connect-teal);
-}
-.connect-header .usa-nav__secondary-links a {
-  color: #a9c8e8;
-}
+
+/* Mobile hamburger button (visible below 64em). */
 .connect-header .usa-menu-btn {
   background-color: var(--connect-teal);
-  color: white;
+  color: var(--connect-white);
+}
+.connect-header .usa-menu-btn:hover {
+  background-color: #008f85;
+}
+
+/* =============================================
+   Desktop (≥ 64em) — horizontal nav with navy bg
+   ============================================= */
+@media (min-width: 64em) {
+  .connect-header .usa-nav {
+    background-color: var(--connect-navy);
+    padding: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  /* Center the nav inner row to match the navbar width */
+  .connect-header .usa-nav__inner {
+    max-width: 64rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-sizing: border-box;
+  }
+
+  /* Primary nav links (top level) */
+  .connect-header .usa-nav__primary > .usa-nav__primary-item > a,
+  .connect-header .usa-nav__primary > .usa-nav__primary-item > button {
+    color: var(--connect-white);
+    background-color: transparent;
+  }
+  .connect-header .usa-nav__primary > .usa-nav__primary-item > a:hover,
+  .connect-header .usa-nav__primary > .usa-nav__primary-item > button:hover {
+    color: var(--connect-white);
+    background-color: rgba(255, 255, 255, 0.12);
+  }
+
+  /* Active (current page) indicator */
+  .connect-header .usa-nav__primary > .usa-nav__primary-item > .usa-current,
+  .connect-header .usa-nav__primary > .usa-nav__primary-item > .usa-current:hover {
+    color: var(--connect-white);
+    background-color: transparent;
+    border-bottom: 4px solid var(--connect-teal);
+  }
+  /* Clear USWDS default left-border marker on .usa-current */
+  .connect-header .usa-nav__primary .usa-current::after {
+    display: none;
+  }
+
+  /* Expanded accordion button (submenu open) */
+  .connect-header .usa-nav__primary button[aria-expanded="true"] {
+    background-color: rgba(255, 255, 255, 0.12);
+    color: var(--connect-white);
+  }
+
+  /* Desktop dropdown submenu */
+  .connect-header .usa-nav__submenu {
+    background-color: var(--connect-navy);
+    border-top: 4px solid var(--connect-teal);
+  }
+  .connect-header .usa-nav__submenu-item a {
+    color: var(--connect-white);
+  }
+  .connect-header .usa-nav__submenu-item a:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+    color: var(--connect-white);
+  }
+
+  /* Secondary nav (GitHub link) */
+  .connect-header .usa-nav__secondary {
+    margin-top: 0;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  .connect-header .usa-nav__secondary-links a {
+    color: #a9c8e8;
+  }
+  .connect-header .usa-nav__secondary-links a:hover {
+    color: var(--connect-white);
+  }
+}
+
+/* =============================================
+   Mobile (< 64em) — USWDS slide-out menu.
+   Keep USWDS default light background so
+   nested accordion submenus remain accessible.
+   ============================================= */
+@media (max-width: 63.99em) {
+  .connect-header .usa-nav {
+    /* USWDS default: white background. Don't override. */
+    padding-top: 1rem;
+  }
+  .connect-header .usa-nav__primary > .usa-nav__primary-item > .usa-current {
+    border-left: 4px solid var(--connect-teal);
+  }
+  /* Close button sits on the light slide-out, so leave
+     its defaults (USWDS ships accessible styles). */
 }
 
 /* ---- Hero (Homepage) ---- */
